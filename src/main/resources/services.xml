@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- This file was auto-generated from WSDL --><!-- by the Apache Axis2 version: 1.6.2  Built on : Apr 17, 2012 (05:33:49 IST) --><serviceGroup>
+    <service name="SimpleStockQuoteService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-only" class="com.services.ws.SimpleStockQuoteServiceMessageReceiverInOnly"/>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="com.services.ws.SimpleStockQuoteServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">com.services.ws.MySimpleStockQuoteServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getQuote" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.samples">
+            <actionMapping>urn:getQuote</actionMapping>
+            <outputActionMapping>urn:getQuoteResponse</outputActionMapping>
+            <faultActionMapping faultName="SimpleStockQuoteServiceException">urn:getQuoteSimpleStockQuoteServiceException</faultActionMapping>
+            <faultActionMapping faultName="SimpleStockQuoteServiceException_Exception">urn:getQuoteSimpleStockQuoteServiceException</faultActionMapping>
+        </operation>
+        <operation name="getSimpleQuote" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.samples">
+            <actionMapping>urn:getSimpleQuote</actionMapping>
+            <outputActionMapping>urn:getSimpleQuoteResponse</outputActionMapping>
+        </operation>
+        <operation name="getMarketActivity" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.samples">
+            <actionMapping>urn:getMarketActivity</actionMapping>
+            <outputActionMapping>urn:getMarketActivityResponse</outputActionMapping>
+        </operation>
+        <operation name="getFullQuote" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://services.samples">
+            <actionMapping>urn:getFullQuote</actionMapping>
+            <outputActionMapping>urn:getFullQuoteResponse</outputActionMapping>
+        </operation>
+        <operation name="placeOrder" mep="http://www.w3.org/ns/wsdl/in-only" namespace="http://services.samples">
+            <actionMapping>urn:placeOrder</actionMapping>
+        </operation>
+    </service>
+</serviceGroup>
